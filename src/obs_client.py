@@ -15,7 +15,7 @@ class OBSController:
         except Exception as e:
              print(f"❌ Error triggering OBS: {e}")
         
-    def save_replay:
+    def save_replay(self):
         try:
             self.client.save_replay_buffer()
             print("✅ Replay Saved!")
