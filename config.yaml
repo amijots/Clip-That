@@ -1,0 +1,7 @@
+audio:
+  volume_threshold: 0.8     # 0.0 to 1.0 (sensitivity)
+  chunk_size: 1024          # Audio buffer size
+  trigger_cooldown: 30      # Seconds to wait before clipping again
+
+obs:
+  replay_buffer_name: "Replay Buffer" # Ensure this matches your OBS settings
