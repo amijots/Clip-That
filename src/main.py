@@ -1,7 +1,7 @@
 import yaml
 from dotenv import load_dotenv
-from src.obs_client import OBSController
-from src.audio_monitor import AudioMonitor
+from obs_client import OBSController
+from audio_monitor import AudioMonitor
 
 # 1. Load Secrets & Config
 load_dotenv()
@@ -22,3 +22,4 @@ if __name__ == "__main__":
         monitor.start_listening()
     except KeyboardInterrupt:
         print("\nStopping...")
+        obs.disconnect()
